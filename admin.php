@@ -1,7 +1,9 @@
 <?php
 include "conn.php";
+include "sessadmin.php";
 
 //Handle:Deleting User
+
 if (isset($_POST['delete'])) {
     $id = $_POST['id'];
     $sql = "DELETE FROM users WHERE id = $id";
@@ -32,7 +34,8 @@ $users = $s->fetchALL();
 </head>
 <body>
     <div class="container">
-
+    <?php include "nav.php";
+    ?>
     <?php
 if ($users && $s->rowCount() > 0) {?>
 <div class="row">
@@ -57,7 +60,7 @@ if ($users && $s->rowCount() > 0) {?>
     <h5><?php echo $user['username']; ?></h5>   
     </div> 
 <div class="col">
-<h5><?php echo $user['emails']; ?></h5>    
+<h5><?php echo $user['email']; ?></h5>    
 </div> 
 <div class="col">
 <form action="adminupdateuser.php" method="get">

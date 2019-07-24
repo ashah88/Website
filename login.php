@@ -51,6 +51,8 @@ if (isset($_POST['login'])) {
 
 <body>
   <div class="container">
+  <?php include "nav.php";
+    ?>
     <h1>Login</h1>
     <form action="" method="post">
       <div class="form-group">

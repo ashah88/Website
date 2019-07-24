@@ -41,6 +41,8 @@ if (isset($_POST['register'])) {
 
 <body> 
     <div class="container">
+    <?php include "nav.php";
+      ?>
 <h1>Register</h1>
 <form action="" method="post">
   <div class="form-group">

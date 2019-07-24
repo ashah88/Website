@@ -7,20 +7,7 @@ include "conn.php";
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<ul class="nav">
-  <li class="nav-item">
-    <a class="nav-link active" href="#">About</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="ajay.php">Today's Thought</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="see.php">See What Everyone's Talking About</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-  </li>
-</ul>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -29,6 +16,8 @@ include "conn.php";
 </head>
 <body>
     <div class="container">
+      <?php include "nav.php";
+      ?>
 <h1>Ajay's Thoughts</h1>
 <div class="row">
 <div class="col"> <h3>Explanation:</h3>

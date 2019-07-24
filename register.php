@@ -12,7 +12,7 @@ if (isset($_POST['register'])) {
     $password = password_hash($password, PASSWORD_DEFAULT);
 
     //Insert Into Database
-    $sql = "INSERT INTO users (username, emails, `passwords`) VALUES ('$username', '$email', '$password')";
+    $sql = "INSERT INTO users (username, email, `password`) VALUES ('$username', '$email', '$password')";
       $conn->exec($sql);
 
       header("Location: login.php");
@@ -43,27 +43,27 @@ if (isset($_POST['register'])) {
     <div class="container">
 <h1>Register</h1>
 <form action="" method="post">
-<div class="form-group">
+  <div class="form-group">
   <label for="username">Enter Username:</label>
   <input type="text" name="username" id="username" Required>
 </div>
 
-<div class="form-group">
-  <label for="email">Enter email:</label>
-  <input type="email" name="email" id="email" Required>
-</div>
+  <div class="form-group">
+    <label for="email">Enter email:</label>
+    <input type="email" name="email" id="email" Required>
+  </div>
 
-<div class="form-group">
-  <label for="password">Enter Password:</label>
-  <input type="password" name="password" id="password" Required>
-</div>
+  <div class="form-group">
+    <label for="password">Enter Password:</label>
+    <input type="password" name="password" id="password" Required>
+  </div>
 
 <div class="form-group">
   <label for="password2">Confirm Password:</label>
   <input type="password" name="password2" id="password2" Required>
 </div>
 
-<button type="submit" class="btn btn-info" name="register">Register</button>
+<button type="submit" class="btn btn-dark" name="register">Register</button>
 
 </form>
 

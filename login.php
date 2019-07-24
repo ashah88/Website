@@ -16,7 +16,12 @@ if (isset($_POST['login'])) {
         session_start();
         $_SESSION['username'] = $username;
         $_SESSION['loggedin'] = 'true';
-        header('Location: home.php');
+        if ($user['type'] == "admin") {
+          $_SESSION['admin'] = 'true';
+          
+        }
+        
+        header('Location: ajay.php');
         die;
 
       } else {

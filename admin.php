@@ -52,7 +52,7 @@ if ($users && $s->rowCount() > 0) {?>
 <?php
   foreach($users as $user) {
     ?>
-    <div class="row">
+    <div class="row mb-3">
     <div class="col">
     <h5><?php echo $user['username']; ?></h5>   
     </div> 
@@ -61,7 +61,7 @@ if ($users && $s->rowCount() > 0) {?>
 </div> 
 <div class="col">
 <form action="adminupdateuser.php" method="get">
-    <input type="hidden" name="id" |value="<?php echo $user['id']; ?>">
+    <input type="hidden" name="id" value="<?php echo $user['id']; ?>">
     <button type="submit" name="update" class="btn btn-success">Update</button>
     </form>
 </div>

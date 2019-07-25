@@ -21,7 +21,7 @@ if (isset($_POST['login'])) {
           
         }
         
-        header('Location: ajay.php');
+        header('Location: index.php');
         die;
 
       } else {

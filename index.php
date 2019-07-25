@@ -14,29 +14,29 @@ include "conn.php";
     <title>Thoughts</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<body>
+<body class="bg-dark">
     <div class="container">
       <?php include "nav.php"; ?>
-<h1>Thoughts</h1>
+<h1 class="text-danger">Thoughts</h1>
 <div class="row">
-<div class="col"> <h3>Explanation:</h3>
-<p>This website was made to talk about different theorys that I created. Everyday there will be a new fact or thought.</p>
+<div class="col"> <h3 class="text-danger">Explanation:</h3>
+<p class="text-danger">This website was made to talk about different theorys that I created. Everyday there will be a new fact or thought.</p>
 </div>
 <div class="col"> <img width="200px" src="https://images.emojiterra.com/google/android-pie/512px/1f914.png" alt=""></div>
 </div>
-<h3>Register</h3>
-<p>If you click register then I will be able to send you today's thought daily. (:</p>
+<h3 class="text-danger">Register</h3>
+<p class="text-danger">If you click register then I will be able to send you today's thought daily. (:</p>
 </div>
 </div>
 <div class="" style="width: 5.5rem;">
   <div class="">
     <h5 class="card-title"></h5>
     <p class="card-text">
-    <a href="register.php" class="btn btn-primary">Register</a>
+    <a href="register.php" class="btn btn-success">Register</a>
   </div>
 </div>
 <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-3">
           <div class="card">
             <div class="bg-danger">
               <h5 class="card-title">Spotify Premium</h5>
@@ -46,6 +46,19 @@ include "conn.php";
           </div>
         </div>
        
-        
+        <div class="row">
+        <div class="col-sm-7">
+          <div class="card">
+            <div class="bg-success">
+              <h5 class="card-title">A.A. Shah Presents: The Shah Game</h5>
+              <a href="game.php" class="btn btn-primary">Play Now!</a>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
 </body>
 </html>

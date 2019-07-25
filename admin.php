@@ -34,8 +34,7 @@ $users = $s->fetchALL();
 </head>
 <body>
     <div class="container">
-    <?php include "nav.php";
-    ?>
+    <?php include "nav.php";?>
     <?php
 if ($users && $s->rowCount() > 0) {?>
 <div class="row">

@@ -12,8 +12,7 @@ include "sess.php";
     <title>Home</title>
 </head>
 <body>
-<?php include "nav.php";
-      ?>
+<?php include "nav.php";?>
   <?php
   if ($_SESSION['admin'] == "true") { ?>
    <a href="admin.php">Admin</a> 

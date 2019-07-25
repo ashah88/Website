@@ -50,8 +50,7 @@ if (isset($_GET['id'])) {
 </head>
 <body>
 <div class="container">
-<?php include "nav.php";
-      ?>
+<?php include "nav.php";?>
 <h1>Update Username</h1>
 <form action="" method="post">
 <div class="form-group">

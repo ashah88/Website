@@ -1,0 +1,14 @@
+id 
+created_at
+updated_at
+user_id
+comment
+score
+
+
+
+
+
+We'll need to add an insert function into the page to put it into the database
+
+Then we'll need to add a show function to showit on the page.

@@ -1,3 +1,6 @@
+<?php 
+
+ ?>
 <ul class="nav">
   <li class="nav-item">
     <a class="nav-link active" href="index.php">About</a>
@@ -9,7 +12,7 @@
     <a class="nav-link" href="see.php">See What Everyone's Talking About</a>
   </li>
   <?php
-  if(!isset($_SESSION['loggedin'])){ ?>
+  if(!isset($_SESSION['loggedin'])){ echo $_SESSION['loggedin']; ?>
   <li class="nav-item">
     <a class="nav-link" href="login.php">login</a>
   </li>
@@ -25,7 +28,7 @@
   if(isset($_SESSION['admin'])){
      if($_SESSION['admin'] == "true") { ?>
         <li class="nav-item">
-    <a class="nav-link disabled" href="./admin.php" tabindex="-1" aria-disabled="true">Admin</a>
+    <a class="nav-link" href="./admin.php" tabindex="-1">Admin</a>
   </li>
   <?php
      } 

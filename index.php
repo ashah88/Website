@@ -1,8 +1,11 @@
 <?php
 include "conn.php";
-
+if (!isset($_SESSION['loggedin'])) {
+  if (empty($_SESSION['loggedin'])) {
+    session_start();
+  }
+}
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,14 +23,14 @@ include "conn.php";
 <h1 class="text-danger">Thoughts</h1>
 <div class="row">
 <div class="col"> <h3 class="text-danger">Explanation:</h3>
-<p class="text-danger">This website was made to talk about different theorys that I created. Everyday there will be a new fact or thought.</p>
+<p class="text-danger">This website was made to talk about different theorys that I created. Everyday there will be a new fact or thought. On Friday's I will ask for suggestions to talk about.</p>
 </div>
 <div class="col"> <img width="200px" src="https://images.emojiterra.com/google/android-pie/512px/1f914.png" alt=""></div>
 </div>
+
+
 <h3 class="text-danger">Register</h3>
 <p class="text-danger">If you click register then I will be able to send you today's thought daily. (:</p>
-</div>
-</div>
 <div class="" style="width: 5.5rem;">
   <div class="">
     <h5 class="card-title"></h5>
@@ -35,7 +38,9 @@ include "conn.php";
     <a href="register.php" class="btn btn-success">Register</a>
   </div>
 </div>
-<div class="row">
+
+<br>
+<div class="row mb-3">
         <div class="col-sm-3">
           <div class="card">
             <div class="bg-danger">
@@ -45,8 +50,9 @@ include "conn.php";
             </div>
           </div>
         </div>
+</div>
        
-        <div class="row">
+        <div class="row mb-3">
         <div class="col-sm-7">
           <div class="card">
             <div class="bg-success">
@@ -55,10 +61,21 @@ include "conn.php";
             </div>
           </div>
         </div>
+</div>
 
-
-
-
+        <div class="row mb-3">
+          <div class="col">
+        <div class="col-sm-10">
+          <div class="card">
+            <div class="bg-primary">
+              <h5 class="card-title">Play Snake! Beat 50!</h5>
+              <a href="https://www.google.com/search?q=snake" class="btn btn-danger">Play Now!</a>
+            </div>
+          </div>
+        </div>
+        </div>
+</div>
+</div>
 
 </body>
 </html>

@@ -15,6 +15,7 @@ if (isset($_POST['login'])) {
       if (password_verify($password, $user['password'])) {
         session_start();
         $_SESSION['username'] = $username;
+        $_SESSION['id'] = $user['id'];
         $_SESSION['loggedin'] = 'true';
         if ($user['type'] == "admin") {
           $_SESSION['admin'] = 'true';

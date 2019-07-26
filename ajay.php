@@ -36,7 +36,8 @@
 <h2 class="text-muted">Thursday: Why did Stan Lee Name Some of His Comic Characters With the Same First Letter of its First Name and Last Name? </h2>
 <p class="text-muted">Have you ever noticed that some of Stan Lee's comic characters have the same first letter in their first and last name. Ex. Bruce Banner, Steven Strange, Pepper Potts, Peter Parker...   There has to something linked or maybe he wanted us to notice this like it was an easter egg in video games. </p>
 
-
+<h2 class="text-warning">Friday: Would You Rather Read a Real Book or an E-Book? What do you think? Send a comment to share your opinion.</h2>
+<p class="text-warning">I would rather read a real book because I like holding the book and physicaly turning the page.</p>
 
 
 

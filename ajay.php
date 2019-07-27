@@ -10,6 +10,7 @@
 
 </head>
 <body class="bg-primary">
+    
 <div class="container">
 
 <h1 class="text-secondary">Thoughts</h1>

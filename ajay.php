@@ -40,7 +40,8 @@
 <h2 class="text-warning">Friday: Would You Rather Read a Real Book or an E-Book? What do you think? Send a comment to share your opinion.</h2>
 <p class="text-warning">I would rather read a real book because I like holding the book and physicaly turning the page.</p>
 
-
+<h2 class="text-light">Saturday: Why Are Nursury Rimes So Dark? </h2>
+<p> class"text-light">Almost every nursury rime is assoiceated with death or pain, but why? Ring Around The Rosy Was about the Black Plauge, Humpty Dumpty fell off a wall and cracked, Jack fell In the well in Jack and Jill, and Rock-a-bye-baby fell off the tree top.
 
 
 
